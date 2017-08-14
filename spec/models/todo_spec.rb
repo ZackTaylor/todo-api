@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Todo, type: :model do
   # Associations
   # Todo has relationship with Item model
-  it {  should have_many(:items).dependant(:destroy)}
+  it {  should have_many(:items).dependent(:destroy)}
 
   # Validation tests
   # columns title and created_by are present before saving
